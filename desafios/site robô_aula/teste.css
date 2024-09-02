@@ -1,0 +1,16 @@
+
+body{
+    background-color: #8b8b8b;
+}
+main{
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    margin: auto;
+
+    width: 800px;
+}
+img{
+    min-width: 10%;
+    max-width: 100%;
+}

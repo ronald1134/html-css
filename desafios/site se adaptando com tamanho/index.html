@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática de imagens dinamicas</title>
+</head>
+<body>
+   <style>
+    body{
+        background-color: rgb(172, 226, 226);
+    }
+   </style>
+    <h1>Imagem dinamica</h1>
+    <p> tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+      <source media="(max-width: 700px)" srcset="imagens/foto pequena.jpeg"type="image/jpeg">
+      
+        <source media="(max-width: 1050px)" srcset="imagens/media.jpeg" type="image/jpeg">
+
+        <img src="imagens/grande.jpeg" alt="grande">
+    </picture>
+    <h2>Agora escute um lofi, e se acalme...</h2>
+    <audio src="midia/Colorful-Flowers(chosic.com).mp3"controls autoplay></audio>
+</body>
+</html>

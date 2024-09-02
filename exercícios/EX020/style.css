@@ -1,0 +1,21 @@
+@charset "UTF-8";
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+a{
+    color: gold;
+    text-decoration: none;
+}
+a:visited{
+    color: orange;
+}
+a:hover{
+   color: burlywood;
+    text-decoration: underline;
+}
+a:active{
+    color: coral;
+}

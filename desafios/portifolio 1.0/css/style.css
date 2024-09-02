@@ -1,0 +1,15 @@
+@charset "UTF-8";
+body{
+    background-color: rgb(138, 181, 227);
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0pt;
+    border: 5px;
+    border-color: rgb(0, 64, 153);
+    border-style: ridge;
+   text-align: center;
+}
+img{
+    padding-bottom: 0px;
+}
