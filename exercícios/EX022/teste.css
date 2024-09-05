@@ -1,0 +1,27 @@
+body{
+    background-image: url(imagens/pattern003.png);
+}
+
+div.quadrado{
+    border: 1px solid #000000;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px #000000;
+}
+
+div.quadrado#q1{
+    background-color: royalblue;
+}
+div.quadrado#q2{
+    background-image: linear-gradient(to top, #000000d3, #800080da);
+}
+div.quadrado#q3{
+    background-image: url('imagens/wallpaper005.jpg');
+    
+}
+div.quadrado#q3:hover{
+    background-image: url('imagens/pattern003.png');
+    transition-duration: 0.5s;
+}
