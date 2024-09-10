@@ -10,12 +10,14 @@
         }
         body{
             height: 98vh;
-            background-color: #000000;
-            background-image: url('imagens/wallpaper002.jpg');
-            background-repeat: no-repeat;
+            
+            /*para colocar em shorthand o background, siga a sequência:
+            color > image > position > repeat > attachment
+
+                A propidade 'background-size' tem que ser colocada separada da shorthand
+            */
+            background: #000000 url('imagens/wallpaper002.jpg') center center no-repeat fixed;
             background-size: cover;
-            background-attachment: fixed;
-            background: #000000 url('imagens/wallpaper002.jpg') center center cover no-repeat fixed;
             
         }
         main{
