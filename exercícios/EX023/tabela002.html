@@ -6,13 +6,19 @@
     <title>Tabelas</title>
     <style>
         body{
+            background-color: rgba(255, 228, 196, 0.87);
             font-family: Arial, Helvetica, sans-serif;
+        }
+        .tabela{
+            width: 800px;
+            border:  solid black
         }
 
         table{
-            width: 500px;
+            width: 800px;
             border-collapse: collapse;
             color: white;
+            position: relative;
             
         }
         caption{
@@ -23,14 +29,20 @@
             color: white;
             
         }
+        thead > tr > th{
+            position: sticky;
+            top: 0%;
+            background-color: #7c7c7c;
+        }
         thead, tfoot{
-            background-color: gray;
+            background-color: #7c7c7c;
             color: white;
             font-weight: bold;
+            
         }
         th, td{
             border: 1px solid black;
-            padding: 5px;
+            padding: 15px;
         }
         td.num{
             text-align: right;
@@ -50,13 +62,21 @@
             background-color: mediumseagreen;
         }
         tbody > tr:nth-child(even){
-            background-color: rgb(34, 102, 49);
+            background-color: #226631;
         }
         td:hover{
             background-color: white ;
             color: black;
             font-weight: bold;
         }
+        .box{
+            background-color: #ffffff;
+            width: 700px;
+            border: 3px solid black;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
     </style>
 </head>
 <body>
@@ -72,128 +92,150 @@
 -->
 
 <!--é bom lembrar que tr é a linha e td é os dados ( células)-->
-<table>
-    <caption>Lista de unidades federativas do Brasil por população </caption>
-                <thead>
-                    <th scope="col">estados</th>
-                    <th scope="col" style="width: 150px;">população</th>
-                </thead>
-<tbody>
-    <tr>
-        <td>São Paulo</td>
-        <td class="num">45 973 190</td>
-    </tr>
-        
+<section class="tabela">
+    <table>
+        <caption>Lista de unidades federativas do Brasil por população </caption>
+                    <thead>
+                        <th scope="col">estados</th>
+                        <th scope="col" style="width: 150px;">população</th>
+                    </thead>
+    <tbody>
         <tr>
-            <td>Minas Gerais</td>
-            <td class="num">21 322 692</td>
+            <td>São Paulo</td>
+            <td class="num">45 973 190</td>
         </tr>
-        <tr>
-            <td>Rio de Janeiro</td>
-            <td class="num">17 219 679</td>
-        </tr>
-        <tr>
-            <td>Bahia</td>
-            <td class="num">14 850 513</td>
-        </tr>
-        <tr>
-            <td> Paraná</td>
-            <td class="num">11 824 665</td>
-        </tr>
-        <tr>
-            <td> Rio Grande do Sul</td>
-            <td class="num">11 229 915</td>
-        </tr>
-        <tr>
-            <td>Pernambuco</td>
-            <td class="num">9 539 029</td>
-        </tr>
-        <tr>
-            <td>Ceará</td>
-            <td class="num">9 233 656</td>
-        </tr>
-        <tr>
-            <td>Pará</td>
-            <td class="num">8 664 306</td>
-        </tr>
-        <tr>
-            <td>Santa Catarina</td>
-            <td class="num">8 058 447</td>
-        </tr>
-        <tr>
-            <td>Goiás</td>
-            <td class="num">7 350 483</td>
-        </tr>
-        <tr>
-            <td> Maranhão</td>
-            <td class="num">7 010 960</td>
-        </tr>
-        <tr>
-            <td>Amazonas</td>
-            <td  class="num">4 281 209</td>
-        </tr>
-        <tr>
-            <td> Paraíba</td>
-            <td  class="num">4 145 040</td>
-        </tr>
-        <tr>
-            <td>Espírito Santo</td>
-            <td  class="num">4 102 129</td>
-        </tr>
-        <tr>
-            <td> Mato Grosso</td>
-            <td  class="num">3 836 399</td>
-        </tr>
-        <tr>
-            <td> Rio Grande do Norte</td>
-            <td class="num" >3 446 071</td>
-        </tr>
-        <tr>
-            <td>Piauí</td>
-            <td class="num" >3 375 646</td>
-        </tr>
-        <tr>
-            <td> Alagoas</td>
-            <td  class="num">3 220 104</td>
-        </tr>
-        <tr>
-            <td>Distrito Federal</td>
-            <td class="num">2 982 815</td>
-        </tr>
-        <tr>
-            <td> Mato Grosso do Sul</td>
-            <td  class="num">2 901 895</td>
-        </tr>
-        <tr>
-            <td>Sergipe</td>
-            <td  class="num">2 291 077</td>
-        </tr>
-        <tr>
-            <td> Rondônia</td>
-            <td  class="num">1 746 227</td>
-        </tr>  
-        <tr>
-            <td>Tocantins</td>
-            <td  class="num">1 577 342</td>
-        </tr>
-        <tr>
-            <td> Acre</td>
-            <td class="num">880 631	</td>
-        </tr>
-        <tr>
-            <td> Amapá</td>
-            <td class="num">802 837	</td>
-        </tr>
-        <tr>
-            <td>Roraima</td>
-            <td class="num">716 793	</td>
-        </tr>
-
-</tbody>
-                <tfoot>
-                    <th scope="row">Total de Habitantes</th>
-                    <td class="num">212 583 720</td>
-                </tfoot>
-</table>
+    
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 322 692</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 219 679</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 850 513</td>
+            </tr>
+            <tr>
+                <td> Paraná</td>
+                <td class="num">11 824 665</td>
+            </tr>
+            <tr>
+                <td> Rio Grande do Sul</td>
+                <td class="num">11 229 915</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 539 029</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 233 656</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 664 306</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">8 058 447</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 350 483</td>
+            </tr>
+            <tr>
+                <td> Maranhão</td>
+                <td class="num">7 010 960</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td  class="num">4 281 209</td>
+            </tr>
+            <tr>
+                <td> Paraíba</td>
+                <td  class="num">4 145 040</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td  class="num">4 102 129</td>
+            </tr>
+            <tr>
+                <td> Mato Grosso</td>
+                <td  class="num">3 836 399</td>
+            </tr>
+            <tr>
+                <td> Rio Grande do Norte</td>
+                <td class="num" >3 446 071</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num" >3 375 646</td>
+            </tr>
+            <tr>
+                <td> Alagoas</td>
+                <td  class="num">3 220 104</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2 982 815</td>
+            </tr>
+            <tr>
+                <td> Mato Grosso do Sul</td>
+                <td  class="num">2 901 895</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td  class="num">2 291 077</td>
+            </tr>
+            <tr>
+                <td> Rondônia</td>
+                <td  class="num">1 746 227</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td  class="num">1 577 342</td>
+            </tr>
+            <tr>
+                <td> Acre</td>
+                <td class="num">880 631	</td>
+            </tr>
+            <tr>
+                <td> Amapá</td>
+                <td class="num">802 837	</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">716 793	</td>
+            </tr>
+    
+    </tbody>
+                    <tfoot>
+                        <th scope="row">Total de Habitantes</th>
+                        <td class="num">212 583 720</td>
+                    </tfoot>
+    </table>
+</section>
+<section class="box">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dicta eligendi maiores magni iure. Amet, quibusdam quaerat similique adipisci praesentium dignissimos possimus alias consectetur ullam doloremque quae impedit, veritatis ipsa.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt tempore, ducimus perspiciatis, facere cumque in sint minus impedit beatae officiis doloremque, totam minima unde quibusdam cum iure deleniti voluptatem harum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, dolorem? Aliquam molestias accusamus provident ipsum minus ratione, expedita laboriosam! Iusto eum voluptatibus debitis non eos natus totam vitae perferendis ipsum!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dicta eligendi maiores magni iure. Amet, quibusdam quaerat similique adipisci praesentium dignissimos possimus alias consectetur ullam doloremque quae impedit, veritatis ipsa.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt tempore, ducimus perspiciatis, facere cumque in sint minus impedit beatae officiis doloremque, totam minima unde quibusdam cum iure deleniti voluptatem harum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, dolorem? Aliquam molestias accusamus provident ipsum minus ratione, expedita laboriosam! Iusto eum voluptatibus debitis non eos natus totam vitae perferendis ipsum!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dicta eligendi maiores magni iure. Amet, quibusdam quaerat similique adipisci praesentium dignissimos possimus alias consectetur ullam doloremque quae impedit, veritatis ipsa.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt tempore, ducimus perspiciatis, facere cumque in sint minus impedit beatae officiis doloremque, totam minima unde quibusdam cum iure deleniti voluptatem harum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, dolorem? Aliquam molestias accusamus provident ipsum minus ratione, expedita laboriosam! Iusto eum voluptatibus debitis non eos natus totam vitae perferendis ipsum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi fuga atque quidem, soluta consectetur quod alias eaque expedita deleniti? Voluptate nemo magnam, vero quos a voluptates quibusdam maxime officia reprehenderit.
+    Corporis ipsa libero hic, dicta laboriosam itaque tempore quis perspiciatis vel doloremque sapiente non eveniet ratione sint eos amet quasi eaque commodi voluptas a temporibus voluptatibus consequatur. In, voluptatem veritatis.
+    Recusandae, perferendis consequatur ullam reiciendis natus blanditiis magni rerum dignissimos perspiciatis voluptas fuga incidunt. Tempore nihil magni autem alias temporibus, aliquam, facere, debitis ullam quod pariatur enim quasi reiciendis qui.
+    Voluptatibus obcaecati minus quas alias modi nam repudiandae excepturi nostrum consectetur. Commodi veritatis nam animi eos officia maxime necessitatibus quae? Eum eos debitis voluptas, facere dignissimos et doloremque totam veniam.
+    Omnis eligendi sit eaque placeat fugit amet ipsum recusandae labore ullam. Odit voluptates at nemo vero nisi iste provident maiores, cum veniam nesciunt consequatur aut aliquid laudantium totam eligendi quis.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum commodi maiores autem fuga dolor molestias blanditiis, tempore velit excepturi! Voluptas, eligendi perferendis. Assumenda architecto ipsa facilis cupiditate, aliquam quos illum.
+    Cupiditate veniam reiciendis culpa nobis neque earum quo, voluptates temporibus quos ad libero aut nihil ducimus ipsum cumque aperiam ut deleniti natus blanditiis? In asperiores dicta, iste repellendus incidunt laborum.
+    Vitae eligendi, voluptates voluptatem autem sapiente dolorem consequatur adipisci rerum! Cupiditate temporibus rerum repellat consequuntur ex laborum, esse tenetur quaerat, eum est at reprehenderit quasi ipsa atque nihil impedit aut.
+    Quod ab laboriosam explicabo voluptatem repudiandae amet, voluptate illo? Praesentium odit id tenetur alias non, animi, reiciendis expedita voluptate incidunt omnis itaque explicabo ex ad, quod ipsa deserunt a perferendis!</p>
+    
 </body>
 </html>
