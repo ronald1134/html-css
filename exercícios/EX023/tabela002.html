@@ -12,11 +12,13 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            color: white;
             
         }
         caption{
             background-color: #505050;
             font-size: 1.5em;
+            padding: 15px;
             font-weight: bold;
             color: white;
             
@@ -33,7 +35,28 @@
         td.num{
             text-align: right;
         }
+        /*para fazer o efeito zebrado, você vai estilizar o tr com a pseudo classse de 
         
+        :nth-child()
+            você pode colocar dentro daquele parentesés      
+            (odd = ímpar)
+            ou
+            (even = par)
+
+            e colocar um background color de sua preferencia
+        
+        */
+        tbody > tr:nth-child(odd){
+            background-color: mediumseagreen;
+        }
+        tbody > tr:nth-child(even){
+            background-color: rgb(34, 102, 49);
+        }
+        td:hover{
+            background-color: white ;
+            color: black;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
