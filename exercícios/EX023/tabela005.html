@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        } 
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        col.cnome{
+            background-color: lightblue;
+            
+        }
+        col.cgrupo{
+            background-color: rgb(120, 120, 245);
+        }
+        col.cprof{
+            background-image: linear-gradient(to right, rgba(0, 0, 255, 0.527), rgba(238, 130, 238, 0.548));
+        }
+    </style>
+</head>
+<body>
+    <!--Digamos que você tenha uma tabela com 500 linhas na coluna e você precise aplicar uma cor nela ou estilizar ela. 
+
+    por isso usaremos <colgroup> para personalizar bem mais rápido.
+
+        para estilizar, basta você criar o elemento <colgroup> e colocar vários col com um class="".
+
+            então, vamos lá digamos que você quer estilizar a tabela nomes com a cor lightblue, você coloca no style   col.nome e aplica a cor de fundo, facíl né?
+    
+            Bônus: no COL, tem como você colocar um span "2", isso fará que com que a coluna seguinte terá a mesma aplicação de estilo. 
+
+            exemplo:
+
+            <colgroup>
+            <col class="cnome" span""2">
+            </colgroup>
+
+
+    -->
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="cprof">
+        </colgroup>
+
+
+        <caption>cadastro</caption>
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col"> Profissão</th>
+        </tr>
+
+        <tr>
+            <td>Ana maria</td>
+            <td> F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Cláudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+        </tr>
+
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+        </tr>
+        
+        <tr>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Vendedor</td>
+        </tr>
+
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Médica</td>
+        </tr>
+
+        <tr>
+            <td>Otávio</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Nutricionista</td>
+        </tr>
+    </table>
+</body>
+</html>
