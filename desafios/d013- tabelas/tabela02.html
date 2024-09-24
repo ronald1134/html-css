@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> mesclagem de tabela</title>
+    <style>
+        table{
+            width: 600px;
+            height: 300px;
+            padding: 8px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            text-transform: uppercase;
+            background-image: linear-gradient(to right, rgb(141, 166, 250), rgb(65, 147, 255));
+           
+            
+        }
+        caption{
+            background-image: linear-gradient(to left, #6a5fff, #351492 );
+            color: white;
+            padding-top: 10px;
+            padding: 20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 20px;
+        }
+        caption:hover{
+            text-decoration: underline;
+        }
+        td{
+            border: 1px solid #000000;
+            transition-duration: 0.5s;
+        }
+        td:hover{
+            background-color: #000000;
+            color: #ffffff;
+        }
+        
+        footer{
+            position: absolute;
+            left: 50%;
+            top: 73%;
+            transform: translate(-50%, -50%);
+            background-image: linear-gradient(to right, rgb(70, 67, 247), rgba(78, 26, 175, 0.986));
+            width: 600px;
+            padding-top: 5px;
+            color: white;
+            text-align: center;
+          
+            
+            border-bottom-left-radius: 55px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.767);
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            transition-duration: 0.5s;
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <caption>
+            tabela com  mesclagem
+            </caption>
+            <tr>
+                <td colspan="4">a</td>
+                <td rowspan="4">b</td>
+        
+            </tr>
+            <tr>
+        
+                <td rowspan="4">c</td>
+                <td>d</td>
+                <td>e</td>
+                <td>f</td>
+            </tr>
+            <tr>
+                <td>g</td>
+                <td>h</td>
+                <td>i</td>
+        
+            </tr>
+            <tr>
+                <td>j</td>
+                <td>l</td>
+                <td>m</td>
+        
+            </tr>
+            <tr>
+                <td colspan="4">n</td>
+            </tr>
+        </table>
+        <footer>criado por <a href="https://github.com/ronald1134" target="_blank">Ronald OLiveira</a>  para <a href="https://www.cursoemvideo.com/" target="_blank"> CursoemVideo</a>
+        
+        <p><a href="tabela01.html">página 1°</a></p></footer>
+    </div>
+</body>
+</html>

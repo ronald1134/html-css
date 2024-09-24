@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+    <style>
+        div#center{
+            position: relative;
+        }
+        table{
+            padding: 8px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-image: linear-gradient(to bottom, rgba(120, 129, 253, 0.747), rgba(120, 224, 255, 0.699));
+            font-family: Arial, Helvetica, sans-serif;
+            width: 500px;
+            height: 300px;
+            text-align: center;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.767);
+            font-weight: bold;
+            
+        }
+
+        caption{
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.767);
+            text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.651);
+            border-top-left-radius: 20px;
+            border-top-right-radius: 100px;
+            background-image: linear-gradient(to right, rgb(70, 67, 247), rgb(78, 26, 175));
+            padding: 15px;
+            font-size: 1.5em;
+            color: white;
+        }
+
+        td{
+            border: 1px solid black;
+            transition-duration: 0.5s;
+            
+        }
+
+        td:hover{
+            background-color: black;
+            color: white;
+        }
+
+       
+        footer{
+            position: absolute;
+            left: 50%;
+            top: 73%;
+            transform: translate(-50%, -50%);
+            background-image: linear-gradient(to right, rgb(70, 67, 247), rgb(78, 26, 175));
+            width: 491px;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            padding-bottom: 10px;
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.767);
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            transition-duration: 0.5s;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div center>
+        
+        <table>
+            <caption>Tabelas</caption>
+            <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td rowspan="2">3</td>
+                    <td>4</td>
+        
+            </tr>
+        
+            <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+            </tr>
+            <tr>
+                    <td colspan="3">8</td>
+                    <td>9</td>
+            </tr>
+            <tr>
+                    <td rowspan="2">10</td>
+                    <td colspan="2">11</td>
+                    <td>12</td>
+            </tr>
+            <tr>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+            </tr>
+        </table>
+        <footer>criado por <a href="https://github.com/ronald1134" target="_blank">Ronald OLiveira</a>  para <a href="https://www.cursoemvideo.com/" target="_blank"> CursoemVideo</a>
+            <p><a href="tabela02.html">página 2°</a></p></footer>
+        </footer>
+    </div>
+</body>
+</html>
