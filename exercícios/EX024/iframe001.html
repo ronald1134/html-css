@@ -4,36 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudo de iframe</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main{
+            
+            position: relative;
+            height: 1000px;
+        }
+
+        main > section{
+            border-radius: 20px ;
+            padding: 20px;
+            position: absolute;
+            border: 1px solid black;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            line-height: 50px;
+            background-image: linear-gradient(to top, rgb(69, 87, 255), rgb(46, 204, 224));
+        }
+
+        main > section > P{
+            font-weight: 500;
+            text-shadow: 0px 0px 1px black;
+            color: #ffffff;
+            
+        }
+
+        iframe{
+            background-color: white;
+            border: 1px solid black;
+            width: 400px;
+            height: 250px;
+            text-align: right;
+        }
+    </style>
 </head>
 <body>
-    <h1>Testando o uso de um Iframe</h1>
-    <!--O que o <iframe>?
-    
-    Primeiro vamos saber o porquê desse I no iframe, esse I quer dizer que 
-    ele é do tipo "INLINE, na mesma linha".
-
-    Já o FRAME, sgnifica quadro/moldura.
-
-    então o <iframe> é um um quadro na mesma linha.
-    
-    No <iframe> podemos colocar links como se fosse uma âncora, porém ele vai exibir página naquela "MOLDURA/QUADRO"
-
-
-
-    Mas o <iframe> não consegue colocar qualquer site dentro da moldura porque existe alguns
-    sites eles tem uma proteção para que o conteúdo não seja exibido por sites de "terceiros"
-    -->
-    <p>
-        Acessando o site do
-        para aprender a programar.
-        <iframe src="https://cursoemvideo.com/" frameborder="5"  ></iframe>
-    </p>
-
-
-    <p>
-        O reposítorio do Ronald Oliveira
-        também é bem legal!
-        <iframe src="https://ronald1134.github.io/html-css/" frameborder="0"></iframe>
-    </p>
+    <main>
+        <section>
+            <h1>Testando o uso de um Iframe</h1>
+            <!--O que o <iframe>?
+            
+            Primeiro vamos saber o porquê desse I no iframe, esse I quer dizer que
+            ele é do tipo "INLINE, na mesma linha".
+            Já o FRAME, sgnifica quadro/moldura.
+            então o <iframe> é um um quadro na mesma linha.
+            
+            No <iframe> podemos colocar links como se fosse uma âncora, porém ele vai exibir página naquela "MOLDURA/QUADRO"
+            Mas o <iframe> não consegue colocar qualquer site dentro da moldura porque existe alguns
+            sites eles tem uma proteção para que o conteúdo não seja exibido por sites de "terceiros"
+            -->
+            <p>
+                Acessando o site do
+                para aprender a programar 🧑🏼‍💻.
+                <iframe src="https://cursoemvideo.com/"
+                frameborder="1"  > <a href="https://cursoemvideo.com/" target="_blank">Curso em video </a></iframe>
+            </p>
+            <p>
+                Projeto criado por Ronald O. para o Curso em video.
+                <iframe src="https://ronald1134.github.io/projeto-cordel/" frameborder="1">
+                    <a href="https://ronald1134.github.io/projeto-cordel/" target="_blank">projeto-cordel</a>
+                </iframe>
+                <!--Tamanho padrão de 300w(largura) e 150h (altura)-->
+                <!--
+                Podemos colocar dois parâmetros dentro do elemento <iframe> que são o width e height
+                -->
+                <!-- CSS
+            
+                mas nada impede de fazer a configuração de altura e largura nas css, até porque se tiver valores na parte do documento e também na folhas de estilo, quem sai "ganhando é às folhas de estilos"
+                -->
+                <!--parâmetro SCOLLING:
+            
+                    irei citar os valores e explicar o que fazem:
+                    auto = se o conteúdo ultrapassar o tamanho do frame ele vai criar a barra de rolagem.
+                    Yes = Mesmo que o conteúdo estivesse cabendo todo dentro daquele iframe ele ia aparecer a barra de rolagem ao lado da moldura.
+            
+                    No = Mesmo que o coteúdo seja maior ele não vai permitir que faça rolagem lateral.
+                        !PORÉM, NO CHROME DO WINDONWS ELE ESTÁ SIM COM ROLAGEM, JÁ NO CHROME DO MAC ELE ACEITA ESSE PARÂMETRO!
+            
+                    então quando for usar ou quando precisar usar esse parãmentro vai derivar de navegaores se vão aceitar.
+                -->
+            </p>
+        </section>
+    </main>
 </body>
 </html>
