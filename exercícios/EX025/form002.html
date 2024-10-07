@@ -7,22 +7,33 @@
 </head>
 <body>
     <h1>Teste de formulário</h1>
-    <form action="cadastro.php" method="post">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <p>
             <label for="iusuario">Usuário:</label>
-            <input type="text" name="usuario" id="iusuario" required>
+            <input type="text" name="usuario" id="iusuario" required required minlength="5" maxlength="10" placeholder="nome do usuário" size="19" autocomplete="username">
 
             
         </p>
 
         <p>
             <label for="isenha">Senha:</label>
-                <input type="password" name="senha" id="isenha" required>
+            <!--aqui usamos um nova caixinha do tipo "passyword/senha"-->
+                <input type="password" name="senha" id="isenha" required minlength="8" maxlength="15" placeholder="senha mínima 8 digitos" size="20" autocomplete="current-password">
+            <!--e como esses dois campos é algo obrigatório para digitar, dentro do <input> coloque o atributo " REQUIRED/OBRIGRATÓRIO " -->
+            
+            <!--caso seja necessário colocar uma limitação de letras e caracteres, ainda dentro do < input> coloque ("   min-legth='5' ")  
+            e para máximo de letras apenas coloque ("   max-legth='15'    ")
+            -->
+
+            <!--podemos colocar aquela mensagem de ajuda para o usuário que fica escrito dentro da caixinha, aquela mensagem do tipo ("Nome do usuário"),  para isso utilize dentro do <input> ("       placeholder='senha'        ")-->
+
+            <!--podemos mudar o tamanho da caixa em html, usando ("     size='10'    ") dentro do < input>-->
+
         </p>
 
         <p>
             <input type="submit" value="enviar">
-            <input type="reset" value="limpar">
+            <input type="reset" value="limpar"> <!--esse tipo de controle "reset" serve para limpar o que você digitou-->
         </p>
     </form>
 </body>

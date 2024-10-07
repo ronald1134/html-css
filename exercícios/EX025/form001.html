@@ -15,11 +15,22 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
+    <!--dentro do form vemos que temos algumas propriedades que são
+    
+    method= serve para definir qual método iremos utilizar a respeito de dados, os valores são "get/padrão"  e o "POST/ onde os dados preenchidos vão estar escondido"
+    
+    action= serve para definir para onde os dadoss iram, e como não sabemos nenhuma linguagem de programação, usamos apenas um script dentro do arquivo "cadastro.php"
+    
+    aucomplete= isso serve como um auxilio de ajuda para preencher, caso você já tenha dados vinculados ele vai detectar e e você terá ajuda para preencher mais rápido.
+    porém podemos aplicar esse autocomplete dentro de 
+    -->
+
+
     <form method="post" action="cadastro.php" autocomplete="off">
         <p><label for="inome">Nome:</label> 
             <input type="text" name="nome" id="inome"></p>
 
-        <p><label for="isobrenome">Sobrenome:</label> 
+        <p><label  for="isobrenome">Sobrenome:</label> 
             <input type="text" name="sobrenome" id="isobrenome"></p>
 
         <p><input type="submit" value="enviar"></p>
