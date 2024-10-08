@@ -10,21 +10,48 @@
 
     <form action="cadastro.php" method="post" autocomplete="on">
 
-        <p>
-            <label for="iemail">E-mail:</label>
-            <input type="email" name="email" id="iemail" autocomplete="email" required >
-        </p>
+        <fieldset><!--Aprendemos uma tag de agrupamento para formulário, que é a:
 
-        <p>
-            <label for="ifone">Telefone:</label>
-            <input type="tel" name="fone" id="ifone" required>
-        </p>
-        
+            <fieldset>
+                (formulários)
+            </fieldset>
+    
+            -->
+
+            <legend>Dados pessoais</legend><!--A tag <legend> é usada dentro de um elemento
+            <fieldset> para fornecer uma legenda ou título descritivo para o
+            grupo de campos de um formulário.
+            -->
+
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="30" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required size="21">
+            </p>
+            <p>
+                <!-- Estudar mais sobre RegEx expressão regular-->
+                <label for="ifone">Telefone:</label>
+                <input type="tel" name="fone" id="ifone" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required size="19">
+                <!--Na aula de aprender os controles de contato/pessoal aprendemos que os dois controles 
+                deixam a desejar a respeito de proatividade, mas para deixar melhor esses tipos de formulários
+                temos que aprender alguma linguagem de programção como Js ou PhP.
+            
+                Como não aprendemos deixar o controle muito bom para o usuário
+                podemos utilizar o atributo (pattern=) porém ele é bemm confuso, mas vale a pena estudar.
+                -->
+            </p>
+
+            
+
+        </fieldset> 
         <p>
             <input type="submit" value="enviar">
             <input type="reset" value="limpar">
         </p>
     </form>
-        <!-- Estudar mais sobre RegEx expressão regular-->
+        
 </body>
 </html>
