@@ -1,2 +1,12 @@
 @charset "UTF-8";
 /*APARELHO EM PÉ (PORTRAIT) */
+body{
+    background-color: yellow;
+    background: url(../imagens/cev-portrait.jpg) center bottom no-repeat fixed;
+    background-size: contain;
+}
+
+            /*para colocar em shorthand o background, siga a sequência:
+            color > image > position > repeat > attachment
+
+                A propidade 'background-size' tem que ser colocada separada da shorthand*/

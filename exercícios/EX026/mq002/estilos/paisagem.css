@@ -1,2 +1,6 @@
 @charset "UTF-8";
 /*APARALEHO DEITADO  (LANDSCAPE)  */
+body{
+    background: url(../imagens/cev-landscape.jpg) left bottom no-repeat fixed;
+    background-size: cover;;
+}
