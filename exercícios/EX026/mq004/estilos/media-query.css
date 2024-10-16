@@ -1,6 +1,48 @@
 
 @charset "UTF-8";
 
+@media print {
+    body{
+        background-image: url(../imagens/icon-print.png);
+        font-family: 'Courier New', Courier, monospace;
+        
+        img#celular{
+                    display: none;
+            }
+        img#tablet{ 
+                    display: none;
+            }
+        img#print{
+                    display: block;
+            }
+        img#pc{
+                    display: none;
+            }
+        img#tv{
+                    display: none;
+        }
+    }
+
+    main{
+        border: 5px  solid black;
+        width: 90vw;
+        height: 40vh;
+    }
+
+    main::after{
+        content: 'Impressão feita pelo site www.cursoemvideo.com';
+        font-size: 20px;
+        text-decoration: overline;
+    }
+    
+    main > h1{
+        text-shadow: none;
+        color: #000000;
+    }
+}
+
+
+
 /*Ipad, Tablet*/
 @media screen and (min-width:767px) and (max-width:992px) {
     body{
