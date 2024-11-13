@@ -15,18 +15,44 @@ body{
 }
 
 header{
-    display: flex;
     background-color: rgb(192, 130, 236);
     color: white;
     padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header > h1{
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
+    flex: 0 0 200px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.644);
 }
 
 header > nav{
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+}
+
+header > nav > a{
+    background-color: rgb(145, 44, 218);
+    color: rgb(237, 213, 253);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+header > nav > a:hover{
+    text-decoration: underline;
+    background-color: indigo;
+    color: rgb(255, 255, 255);
+    transition-duration: .4s;
 }
 
 main{
@@ -46,3 +72,5 @@ main > p{
     margin: 10px 0px;
 
 }
+
+
